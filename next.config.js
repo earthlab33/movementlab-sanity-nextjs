@@ -12,11 +12,11 @@ module.exports = {
     ],
     domains: [
       "cdn.sanity.io",
-      "mymexicotours.s3.amazonaws.com",
+      "d1hd3rokkj5cpu.cloudfront.net",
       "via.placeholder.com",
       "d1coydiqa46lxm.cloudfront.net",
       "v5.airtableusercontent.com",
-      "cdn.mymexicotours.com",
+      "movementlab.dance",
     ],
   },
 };

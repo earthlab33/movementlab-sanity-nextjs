@@ -8,27 +8,30 @@ export default function Sidebar() {
 
   return (
     <>
-      <Hamburger toggled={isOpen} toggle={setIsOpen} color="#FFF" />
+      <Hamburger toggled={isOpen} toggle={setIsOpen} color="#000" /><span>MENU</span>
       <div
-        className={`top-16 right-0 fixed bg-black w-[35vw] h-full p-10 ${
+        className={`top-20 right-0 fixed bg-white w-[35vw] h-screen p-10 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-300`}
       >
-        <h2 className="text-2xl text-white">Sidebar Menu</h2>
+        <div className="bg-white w-[35vw]">
+        <h2 className="text-lg text-black">Menu</h2>
         <ul className="mt-10">
-          <li className="text-white">
-          <Link href="/" passHref>
+          <li className="text-black">
+          <Link href="/" passHref onClick={() => setIsOpen(false)}>
             Home
              </Link>
             </li>
-          <li className="text-white"><Link href="/about" passHref>About</Link></li>
-          <li className="text-white"><Link href="/contact" passHref>Contact</Link> </li>
-          <li className="text-white">
-            <Link href="/login" passHref>
+          <li className="text-black"><Link href="/about" passHref onClick={() => setIsOpen(false)} >About</Link></li>
+          <li className="text-black"><Link href="/calendar" passHref onClick={() => setIsOpen(false)} >Calendar</Link></li>
+          <li className="text-black"><Link href="/contact" passHref onClick={() => setIsOpen(false)}>Contact</Link> </li>
+          <li className="text-black">
+            <Link href="/login" passHref onClick={() => setIsOpen(false)}>
               Log In
             </Link>
           </li>
         </ul>
+      </div>
       </div>
     </>
   );

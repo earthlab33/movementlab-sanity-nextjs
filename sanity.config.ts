@@ -3,10 +3,10 @@ import {deskTool} from 'sanity/desk';
 import schemas from './sanity/schemas';
 
 const config = defineConfig({
-    projectId: '859n8uf6',
+    projectId: '4xudl8md',
     dataset: "production",
-    title: "My Mexico Tours",
-    apiVersion: '2023-05-22',
+    title: "MovementLab",
+    apiVersion: '2023-07-09',
     basePath: '/admin',
     plugins: [deskTool()],
     schema: {types: schemas}
